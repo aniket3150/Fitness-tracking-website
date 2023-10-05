@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/barbell.png" />
+
+    <title>Day-2-Exercise</title>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+      * {
+        font-family: "Nunito", sans-serif;
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        -webkit-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+      }
+      /* ------------------------------- */
+
+      /* ------------------------------- */
+
+      html {
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+        scroll-padding-top: 5rem;
+        overflow-x: hidden;
+      }
+
+      section {
+        padding: 5rem 9%;
+      }
+
+      .heading {
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+      }
+
+      .heading::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        height: 0.1rem;
+        width: 100%;
+        background: #aaa;
+        z-index: -1;
+      }
+
+      .heading span {
+        font-size: 3rem;
+        color: #f00;
+        background: #000;
+        padding: 0.5rem 1.5rem;
+        border: 0.1rem solid #aaa;
+        border-radius: 0.5rem;
+      }
+
+      .btn {
+        margin-top: 1rem;
+        display: inline-block;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        padding-right: 3rem;
+        background: linear-gradient(180deg, #f00 93%, transparent 140%);
+        color: #fff;
+        font-family: sans-serif;
+        cursor: pointer;
+        font-size: 1.7rem;
+      }
+
+      .btn:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+
+      .header {
+        height: 75px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0 9%;
+        z-index: 10000;
+        background: radial-gradient(
+          circle,
+          rgb(25, 30, 55) 0%,
+          rgb(39, 39, 62) 91%
+        );
+      }
+
+      .header .logo {
+        font-weight: bolder;
+        color: #fff;
+        font-size: 3rem;
+      }
+
+      .header .logo span {
+        color: #f00;
+      }
+
+      .header .navbar a {
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        font-size: 1.7rem;
+        color: #fff;
+      }
+
+      .header .navbar a:hover {
+        background: #f00;
+        border-radius: 10px;
+      }
+
+      #menu-btn {
+        font-size: 3rem;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+      }
+
+      .home {
+        padding: 0;
+
+        margin-top: 5rem;
+      }
+
+      .day-2 ul li {
+        font-size: 24px;
+        color: #000000;
+        font-weight: bold;
+        line-height: 40px;
+        text-align: start;
+        margin-top: 20px;
+        margin-left: 40px;
+      }
+      .day-2 ul li span {
+        color: #f00;
+      }
+      .day2 {
+        font-size: 30px;
+        color: black;
+        margin-top: 90px;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .health {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 35px;
+        color: rgb(51, 125, 159);
+      }
+      .span {
+        color: red;
+      }
+    </style>
+    <header class="header">
+      <a href="#" class="logo"> <span>The workout</span> ZONE</a>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#about">pricing</a>
+        <a href="#features">trainers</a>
+        <a href="#pricing">features</a>
+        <a href="#trainers">about</a>
+        <a href="#blogs"></a>
+      </nav>
+    </header>
+    <div class="day-2">
+      <div class="day2">
+        <p>Day-2: Chest and back</p>
+      </div>
+      <ul>
+        <li>
+          <span>Chest: dumbbell bench press or floor presss</span> — 3 sets of
+          6-8 reps
+        </li>
+        <li>
+          <span>Back: dumbbell bent-over rows </span> — 3 sets of 6-8 reps
+        </li>
+        <li><span>Chest: dumbbell fly</span> — 3 sets of 8-10 reps</li>
+        <li><span>Back: one-arm dumbbell rows </span> — 3 sets of 6-8 reps</li>
+        <li><span> Chest: pushups </span> — 3 sets of 10-12 reps</li>
+        <li>
+          <span>Back/chest: dumbbell pullovers </span> — 3 sets of 10-12 reps
+        </li>
+      </ul>
+    </div>
+
+    <h1 class="health">
+      <span class="span">“</span> To keep the body in good health is a duty…
+      otherwise we shall not be able to keep our mind strong and clear.<span
+        class="span"
+      >
+        ”</span
+      >
+    </h1>
+  </body>
+</html>
